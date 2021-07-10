@@ -1,0 +1,116 @@
+html {
+    min-width: 100vw;
+    min-height: 100vh; 
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 1024px;
+    width: 1440px;
+}
+
+/* background  */
+
+.blue-bg {
+    display: block;
+    background: url(assets/Shape.svg) no-repeat;
+    position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%,-50%);
+    pointer-events: none;
+}
+
+/* container for greeting and description + signature */
+
+.center-container {
+    position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%,-50%);
+    width: 450px;
+    height: 300px;
+    background-color: #92CAFF;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.greeting {
+    margin: 0;
+    margin-bottom: -10px;
+    width: 450px;
+    height: 100%;
+    background-color: #92CAFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    /* identical to box height */
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+/* signatures */
+
+.center-container svg {
+    height: 100px;
+    transform: scale(1.5);
+    padding: 28px 20px 20px 20px;
+    position: absolute;
+}
+
+ #black-sig {
+    stroke-dasharray: 155;
+    stroke-dashoffset: 155;
+    animation: sign 2.5s ease-in-out;
+    animation-fill-mode: forwards;
+} 
+
+
+#white-sig {
+    stroke-dasharray: 155;
+    stroke-dashoffset: 155;
+    animation: sign 3s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sign {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* description "front-end dev / web dev" */
+
+.description {
+    width: 295px;
+    height: 20px;
+    margin: 40px;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+    letter-spacing: -0.02em;
+
+    color: #000000;
+
+}
+
+/* ParticlesJS */
+
+#particles-js {
+    position: absolute;
+    background-color: white;
+    height: 1024px;
+    width: 100vw
+}
