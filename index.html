@@ -113,35 +113,13 @@
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
+    <!-- check if particlesJS loaded  -->
     <script>
       particlesJS.load("particles-js", "particles.json", function () {
         console.log("particles.json loaded...");
       });
     </script>
 
-    <script>
-      let particles = document.getElementById("particles-js");
-      let sun = document.getElementById("sun");
-      let mountainsBack = document.getElementById("back");
-      let text = document.getElementById("text");
-      let mainHeading = document.getElementById("main-title");
-      let greeting = document.getElementById("above-text");
-      let btn = document.getElementById("btn");
-      let mountainsFront = document.getElementById("front");
-
-      window.addEventListener("scroll", () => {
-        let value = window.scrollY;
-        particles.style.left = value + "px";
-        sun.style.top = value * 0.25 + "%";
-        mountainsBack.style.top = value * 0.5 + "px";
-        mountainsFront.style.top = value * 0 + "px";
-        text.style.marginRight = value * 6 + "px";
-        text.style.marginTop = value * 5 + "px";
-        greeting.style.marginRight = value * 6 + "px";
-        greeting.style.marginTop = value * 5 + "px";
-        btn.style.marginTop = value * 2.5 + "px";
-        btn.style.marginLeft = value * 2 + "px";
-      });
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
