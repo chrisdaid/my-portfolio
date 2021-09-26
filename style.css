@@ -242,6 +242,13 @@ section img#front {
 .sec p {
   font-size: 1.2em;
   color: #fff;
+  line-height: 1.25em;
+}
+
+.sec p span {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 500;
 }
 
 #about h3 {
@@ -251,46 +258,44 @@ section img#front {
   color: #fff;
 }
 
-#about span::before {
+#about #palm-tree::before {
   content: "W";
   color: rgba(0, 0, 0, 0);
   pointer-events: none;
 }
 
-#about span {
+#about #palm-tree {
   background: url(assets/palm-tree.svg);
   background-repeat: no-repeat;
   width: 10px;
-  /* background-color: red; */
-}
-
-#about span::after {
-  content: none;
-}
-
-#about p {
-  line-height: 1.25em;
 }
 
 .container-about-me {
   margin-top: 20px;
-  display: grid;
-  text-align: center;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-template-rows: repeat(3, 30px);
-  grid-gap: 1rem;
-  grid-auto-flow: dense;
-  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid black; */
+  padding: 25px;
+  /* background-color: #fff; */
 }
 
-.shape-1 {
-  /* width: 50px;
-  height: 50px;
-  background: url(assets/info.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  overflow: hidden;
-  text-overflow: ellipsis; */
+.container-shapes {
+  /* background-color: red; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img {
+  height: 100px;
+}
+
+.icon {
+  width: 75px;
+  background: url(assets/palm-tree.svg);
+  text-align: center;
+  margin: 0 auto;
+  height: 75px;
 }
 
 #particles-js {
