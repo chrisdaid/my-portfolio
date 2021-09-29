@@ -292,10 +292,26 @@ section img#front {
 
 .icon {
   width: 75px;
-  background: url(assets/palm-tree.svg);
   text-align: center;
-  margin: 0 auto;
+  margin: auto;
   height: 75px;
+}
+
+.icon-1 {
+  background: url(assets/javascript.svg) no-repeat;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+.icon-2 {
+  background: url(assets/figma.svg) no-repeat;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+.icon-3 {
+  background: url(assets/css.svg) no-repeat;
+  background-size: cover;
 }
 
 #particles-js {
